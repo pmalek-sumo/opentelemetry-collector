@@ -22,9 +22,9 @@ import (
 
 // Config defines configuration for Resource processor.
 type Config struct {
-	*config.ProcessorSettings `mapstructure:"-"`
-	Metrics                   MetricFilters `mapstructure:"metrics"`
-	Spans                     SpanFilters   `mapstructure:"spans"`
+	config.ProcessorSettings `mapstructure:"-"`
+	Metrics                  MetricFilters `mapstructure:"metrics"`
+	Spans                    SpanFilters   `mapstructure:"spans"`
 }
 
 // SpanFilters filters by Span properties
